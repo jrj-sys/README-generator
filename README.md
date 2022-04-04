@@ -1,2 +1,2 @@
-# README-generator
-A professional README generator using Node.js and its npm package inquirer. 
+# README-Generator
+A professional README generator using Node.js and its npm package inquirer.

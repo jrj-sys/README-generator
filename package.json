@@ -1,0 +1,22 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "A professional README generator using Node.js and its npm package inquirer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jamel James (github.com/jrj-sys)",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrj-sys/README-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrj-sys/README-generator/issues"
+  },
+  "homepage": "https://github.com/jrj-sys/README-generator#readme"
+}
