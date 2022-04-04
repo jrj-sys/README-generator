@@ -1,6 +1,7 @@
 // required dependencies
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateREADME = require('./utils/generateMarkdown')
 
 // array of questions for user input
 const promptQuestions = () => {
@@ -26,7 +27,7 @@ const promptQuestions = () => {
         },
         {
             type: 'input',
-            name: 'installation',
+            name: 'install',
             message: 'Please provide user instructions for installation of your project:'
         },
         {
@@ -57,6 +58,7 @@ const promptQuestions = () => {
     ])
     .then(answers => {
         console.log(answers);
+        console.log(generateREADME(answers))
     })
 }
 
