@@ -1,8 +1,7 @@
 // required dependencies
-const { create } = require('domain');
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateREADME = require('./utils/generateMarkdown')
+const { generateMarkdown, renderLicenseText, renderLicenseBadge } = require('./utils/generateMarkdown')
 
 // array of questions for user input
 const promptQuestions = () => {
@@ -11,8 +10,28 @@ const promptQuestions = () => {
         {
             // NOT optional (validate)
             type: 'input',
+            name: 'github',
+            message: 'What is your GitHub username? [REQUIRED]:',
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username!');
+                }
+            }
+        },
+        {
+            // NOT optional (validate)
+            type: 'input',
             name: 'title',
-            message: 'What is the title of your project? [REQUIRED]'
+            message: 'What is the title of your project? [REQUIRED]:',
+            validate: titleInput => {
+                if (titleInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a title for your project!');
+                }
+            }
         },
         {
             type: 'input',
@@ -38,13 +57,14 @@ const promptQuestions = () => {
         },
         {
             type: 'input',
-            name: 'contribution',
+            name: 'credits',
             message: 'Please enter all who contributed to your application (name / github / primary presence links):'
         },
         {
-            type: 'input',
-            name: 'tests',
-            message: 'Please provide instructions on testing your application:'
+            type: 'checkbox',
+            name: 'madewith',
+            message: 'Which languages and/or tech stack was your project created with?',
+            choices: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Node.js', 'ES6', 'React/MERN', 'Express.js']
         },
         {
             type: 'input',
@@ -54,13 +74,13 @@ const promptQuestions = () => {
         {
             type: 'checkbox',
             name: 'license',
-            choices: ['MIT', 'GPL 2.0', 'Apache 2.0', 'GPL 3.0', 'BSD 2.0', 'ISC', 'LGPL 2.1', 'Ms-Pl']
+            message: 'Which license is your project protected under?:',
+            choices: ['MIT', 'GPL 2.0', 'Apache 2.0', 'GPL 3.0', 'BSD 2.0', 'ISC', 'LGPL 3.0', 'Mozilla 2.0']
         }
     ])
-    .then(answers => {
-        console.log(answers);
-        console.log(generateREADME(answers))
-        createREADME(generateREADME(answers));
+    .then(response => {
+        console.log(response);
+        createREADME(generateMarkdown(response));
     })
 }
 
