@@ -218,6 +218,7 @@ const renderLicenseBadge = license => {
   } else if (license === 'BSD 2.0') {
     return `
     ![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
+    `;
   } else if (license === 'ISC') {
     return `
     ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
