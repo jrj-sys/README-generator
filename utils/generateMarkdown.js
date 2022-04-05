@@ -201,40 +201,39 @@ For more information, please refer to <https://unlicense.org>
 const renderLicenseBadge = license => {
   if (license === 'MIT') {
     return `
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
     `;
   } else if (license === 'GPL 2.0') {
     return `
-    [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+    ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
     `;
   } else if (license === 'GPL 3.0') {
     return `
-    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+    ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
     `;
   } else if (license === 'Apache 2.0') {
     return `
-    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
     `;
   } else if (license === 'BSD 2.0') {
     return `
-    [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-    `;
+    ![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
   } else if (license === 'ISC') {
     return `
-    [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+    ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
     `;
   } else if (license === 'LGPL 3.0') {
     return `
-    ![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+    ![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)
     `;
   } else if (license === 'Mozilla 2.0') {
     return `
-    [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+    ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
     `;
   } else {
     console.log('Unlicensed license badge added.')
     return `
-    [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+    ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
     `;
   }
 }
