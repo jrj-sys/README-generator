@@ -1,4 +1,5 @@
 // required dependencies
+const { create } = require('domain');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateREADME = require('./utils/generateMarkdown')
@@ -59,12 +60,18 @@ const promptQuestions = () => {
     .then(answers => {
         console.log(answers);
         console.log(generateREADME(answers))
+        createREADME(generateREADME(answers));
     })
 }
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const createREADME = fileContent => {
+    fs.writeFile('./dist/README.md', fileContent, err => {
+        if (err) throw err;
+        console.log('README file created!');
+    })
+}
 
 
 
