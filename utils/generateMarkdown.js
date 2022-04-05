@@ -1,11 +1,11 @@
 // function that creates the markdown of the README
 let generateMarkdown = response => {
-  return `# ${response.title}
+  return `# ${response.title} 
 ${renderLicenseBadge(response.license[0])}
 ## Description
 ${response.description}
 ## Table of Contents
-1. [Contact Me](#Questions)
+1. [Contact Me](#Contact)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
 4. [Credits](#Credits)
@@ -16,11 +16,13 @@ ${response.usage}
 ## Credits
 ${response.credits}
 ## Made With:
-*${response.madewith.join('  *')}
-## Questions
-- GitHub => https://github.com/${response.github}  
+${response.madewith.join(', ')}
+## Contact
+Please reach out to me via GitHub or Email for additional questions.
 
-${response.questions}
+- GitHub => https://github.com/${response.github}  
+- Email => ${response.email}
+
 ${renderLicenseText(response.license[0], response.title)}
 `;
 }
@@ -201,41 +203,41 @@ For more information, please refer to <https://unlicense.org>
 const renderLicenseBadge = license => {
   if (license === 'MIT') {
     return `
-    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-    `;
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+`;
   } else if (license === 'GPL 2.0') {
-    return `
-    ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
-    `;
+return `
+![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
+`;
   } else if (license === 'GPL 3.0') {
-    return `
-    ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-    `;
+return `
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+`;
   } else if (license === 'Apache 2.0') {
-    return `
-    ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-    `;
+return `
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+`;
   } else if (license === 'BSD 2.0') {
-    return `
-    ![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
-    `;
+return `
+![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
+`;
   } else if (license === 'ISC') {
-    return `
-    ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
-    `;
+return `
+![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
+`;
   } else if (license === 'LGPL 3.0') {
-    return `
-    ![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)
-    `;
+return `
+![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)
+`;
   } else if (license === 'Mozilla 2.0') {
-    return `
-    ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
-    `;
+return `
+![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
+`;
   } else {
-    console.log('Unlicensed license badge added.')
-    return `
-    ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
-    `;
+console.log('Unlicensed license badge added.')
+return `
+![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
+`;
   }
 }
 

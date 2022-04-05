@@ -1,28 +1,30 @@
-# Project
+# README Generator 
 
- ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
-    
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Description
-This is a test project to test 
+A professional README generator that uses Node.js and its npm package, inquirer, to create a README for the user.
 ## Table of Contents
-1. [Contact Me](#Questions)
+1. [Contact Me](#Contact)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
 4. [Credits](#Credits)
 ## Installation
-Install it
+To install, clone the respository onto your machine. Make to sure `npm init` and `npm install inquirer` to install required dependencies. 
 ## Usage
-Use it
+To use the generator, simply run `node index.js` in your terminal at the root directory of the file.
 ## Credits
-Jamel James - https://github.com/jrj-sys, Jane Doe - https://github.com/janedoe
+Jamel James - https://github.com/jrj-sys
 ## Made With:
-*JavaScript  *Node.js  *ES6
-## Questions
-- GitHub => https://github.com/jrj-sys  
+JavaScript, Node.js, ES6
+## Contact
+Please reach out to me via GitHub or Email for additional questions.
 
-Issue or email 
+- GitHub => https://github.com/jrj-sys  
+- Email => jamesjamel99@gmail.com
+
 ## License
-Copyright (c) [2022] [Project]
+Copyright (c) [2022] [README Generator]
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

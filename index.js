@@ -21,6 +21,11 @@ const promptQuestions = () => {
             }
         },
         {
+            type: 'input',
+            name: 'email',
+            message: 'What is your contact email?:'
+        },
+        {
             // NOT optional (validate)
             type: 'input',
             name: 'title',
@@ -39,13 +44,6 @@ const promptQuestions = () => {
             message: 'Provide a short description explaining the what, why, and how of your project:'
         },
         {
-            // optional (create conditional)
-            type: 'confirm',
-            name: 'toc',
-            message: 'If you expect your README to be lengthy, you should add a table of contents. Would you like to do that now?',
-            default: false
-        },
-        {
             type: 'input',
             name: 'install',
             message: 'Please provide user instructions for installation of your project:'
@@ -58,18 +56,13 @@ const promptQuestions = () => {
         {
             type: 'input',
             name: 'credits',
-            message: 'Please enter all who contributed to your application (name / github / primary presence links):'
+            message: 'Please enter the GitHub username or names with their primary online presence of all contributors, seperated by commas:'
         },
         {
             type: 'checkbox',
             name: 'madewith',
             message: 'Which languages and/or tech stack was your project created with?',
             choices: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Node.js', 'ES6', 'React/MERN', 'Express.js']
-        },
-        {
-            type: 'input',
-            name: 'questions',
-            message: 'Please provide instructions for user questions and contribution:'
         },
         {
             type: 'checkbox',
@@ -85,14 +78,12 @@ const promptQuestions = () => {
 }
 
 
-// TODO: Create a function to write README file
+// writes to the README.md file with fileContent passed as generateMarkdown(response)
 const createREADME = fileContent => {
     fs.writeFile('./dist/README.md', fileContent, err => {
         if (err) throw err;
         console.log('README file created!');
     })
 }
-
-
 
 promptQuestions();
