@@ -32,7 +32,7 @@ ${renderLicenseText(response.license[0], response.title)}
 let renderLicenseText = (license, title) => {
   if (license === 'MIT') {
   return `## License
-Copyright (c) [${new Date().getFullYear()}] [${title}]
+Copyright (c) ${new Date().getFullYear()} ${title}
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

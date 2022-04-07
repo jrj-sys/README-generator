@@ -1,18 +1,18 @@
-# README Generator 
+# Jest Another RPG 
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-A professional README generator that uses Node.js and its npm package, inquirer, to create a README for the user.
+A command line roleplaying game that lets a user fight three enemies. Includes health, agility, and strength potions to allow RNG skill expression.
 ## Table of Contents
 1. [Contact Me](#Contact)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
 4. [Credits](#Credits)
 ## Installation
-To install, clone the respository onto your machine. Make to sure `npm init` and `npm install inquirer` to install required dependencies. 
+To install, clone the respository onto your machine. Open a terminal from the root directory.
 ## Usage
-To use the generator, simply run `node index.js` in your terminal at the root directory of the file.
+`node app.js` in your terminal.
 ## Credits
 Jamel James - https://github.com/jrj-sys
 ## Made With:
@@ -24,7 +24,7 @@ Please reach out to me via GitHub or Email for additional questions.
 - Email => jamesjamel99@gmail.com
 
 ## License
-Copyright (c) [2022] [README Generator]
+Copyright (c) [2022] [Jest Another RPG]
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
