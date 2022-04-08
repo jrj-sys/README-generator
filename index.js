@@ -11,7 +11,7 @@ const promptQuestions = () => {
             // NOT optional (validate)
             type: 'input',
             name: 'github',
-            message: 'What is your GitHub username? [REQUIRED]:',
+            message: 'What is your GitHub username?',
             validate: githubInput => {
                 if (githubInput) {
                     return true;
@@ -23,13 +23,20 @@ const promptQuestions = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'What is your contact email?:'
+            message: 'What is your contact email?',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a title for your project!');
+                }
+            }
         },
         {
             // NOT optional (validate)
             type: 'input',
             name: 'title',
-            message: 'What is the title of your project? [REQUIRED]:',
+            message: 'What is the title of your project as it appears on GitHub? [Use dashes as spaces]',
             validate: titleInput => {
                 if (titleInput) {
                     return true;
@@ -41,7 +48,14 @@ const promptQuestions = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Provide a short description explaining the what, why, and how of your project:'
+            message: 'Provide a short description explaining the what, why, and how of your project:',
+            validate: descInput => {
+                if (descInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a title for your project!');
+                }
+            }
         },
         {
             type: 'input',
@@ -52,6 +66,11 @@ const promptQuestions = () => {
             type: 'input',
             name: 'usage',
             message: 'Please provide user instructions for usage of your project:'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'If applicable, which framework was used for testing?'
         },
         {
             type: 'input',
@@ -72,7 +91,6 @@ const promptQuestions = () => {
         }
     ])
     .then(response => {
-        console.log(response);
         createREADME(generateMarkdown(response));
     })
 }

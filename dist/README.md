@@ -1,30 +1,35 @@
-# Jest Another RPG 
+# Jest-Another-RPG 
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 A command line roleplaying game that lets a user fight three enemies. Includes health, agility, and strength potions to allow RNG skill expression.
 ## Table of Contents
-1. [Contact Me](#Contact)
+1. [Questions or Issues](#Questions)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
-4. [Credits](#Credits)
+4. [Tests](#Tests)
+5. [Credits](#Credits)
 ## Installation
 To install, clone the respository onto your machine. Open a terminal from the root directory.
 ## Usage
-`node app.js` in your terminal.
+node `app.js in` your terminal.
+## Tests
+The jest framework was used for testing.
 ## Credits
-Jamel James - https://github.com/jrj-sys
+[Jamel James](https://github.com/jrj-sys)
 ## Made With:
 JavaScript, Node.js, ES6
-## Contact
+## Contribution 
+Issues can be created at any time [here](https://github.com/jrj-sys/Jest-Another-RPG/issues).
+## Questions
 Please reach out to me via GitHub or Email for additional questions.
 
-- GitHub => https://github.com/jrj-sys  
-- Email => jamesjamel99@gmail.com
+- [GitHub](https://github.com/jrj-sys)
+- [Email](jamesjamel99@gmail.com)
 
 ## License
-Copyright (c) [2022] [Jest Another RPG]
+Copyright (c) 2022 Jest-Another-RPG
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -5,23 +5,28 @@ ${renderLicenseBadge(response.license[0])}
 ## Description
 ${response.description}
 ## Table of Contents
-1. [Contact Me](#Contact)
+1. [Questions or Issues](#Questions)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
-4. [Credits](#Credits)
+4. [Tests](#Tests)
+5. [Credits](#Credits)
 ## Installation
 ${response.install}
 ## Usage
 ${response.usage}
+## Tests
+The ${response.tests} framework was used for testing.
 ## Credits
 ${response.credits}
 ## Made With:
 ${response.madewith.join(', ')}
-## Contact
+## Contribution 
+Issues can be created at any time [here](https://github.com/${response.github}/${response.title}/issues).
+## Questions
 Please reach out to me via GitHub or Email for additional questions.
 
-- GitHub => https://github.com/${response.github}  
-- Email => ${response.email}
+- [GitHub](https://github.com/${response.github})
+- [Email](${response.email})
 
 ${renderLicenseText(response.license[0], response.title)}
 `;
