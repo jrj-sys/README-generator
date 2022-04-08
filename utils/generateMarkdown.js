@@ -6,10 +6,11 @@ ${renderLicenseBadge(response.license[0])}
 ${response.description}
 ## Table of Contents
 1. [Questions or Issues](#Questions)
-2. [Installation](#Installation)
-3. [Usage](#Usage)
-4. [Tests](#Tests)
-5. [Credits](#Credits)
+2. [Contribution](#Contribution)
+3. [Installation](#Installation)
+4. [Usage](#Usage)
+5. [Tests](#Tests)
+6. [Credits](#Credits)
 ## Installation
 ${response.install}
 ## Usage
