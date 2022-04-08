@@ -26,7 +26,7 @@ Issues can be created at any time [here](https://github.com/${response.github}/$
 Please reach out to me via GitHub or Email for additional questions.
 
 - [GitHub](https://github.com/${response.github})
-- [Email](${response.email})
+- Email: ${response.email}
 
 ${renderLicenseText(response.license[0], response.title)}
 `;
