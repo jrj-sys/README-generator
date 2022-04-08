@@ -29,7 +29,7 @@ Please reach out to me via GitHub or Email for additional questions.
 - [Email](jamesjamel99@gmail.com)
 
 ## License
-Copyright (c) 2022 README-Generator
+Copyright (c) 2022 README Generator
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
