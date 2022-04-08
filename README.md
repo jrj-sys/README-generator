@@ -15,7 +15,7 @@ To install, clone the repository onto your machine. Make sure to `npm init` and 
 ## Usage
 To use the generator, run `node index.js` in your terminal at the root of directory of the file.
 ## Tests
-The No tests were ran for this project. You can use a framework, such as jest, to test functions in this project. framework was used for testing.
+No tests were ran for this project. You can use a framework, such as jest, to test functions in this project. framework was used for testing.
 ## Credits
 [Jamel James](https://github.com/jrj-sys)
 ## Made With:
