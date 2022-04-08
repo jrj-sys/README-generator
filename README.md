@@ -5,26 +5,31 @@
 ## Description
 A professional README generator that uses Node.js and its npm package, inquirer, to create a README for the user.
 ## Table of Contents
-1. [Contact Me](#Contact)
+1. [Questions or Issues](#Questions)
 2. [Installation](#Installation)
 3. [Usage](#Usage)
-4. [Credits](#Credits)
+4. [Tests](#Tests)
+5. [Credits](#Credits)
 ## Installation
-To install, clone the respository onto your machine. Make to sure `npm init` and `npm install inquirer` to install required dependencies. 
+To install, clone the repository onto your machine. Make sure to `npm init` and `npm install inquirer` within your terminal to install required dependencies. 
 ## Usage
-To use the generator, simply run `node index.js` in your terminal at the root directory of the file.
+To use the generator, run `node index.js` in your terminal at the root of directory of the file.
+## Tests
+The No tests were ran for this project. You can use a framework, such as jest, to test functions in this project. framework was used for testing.
 ## Credits
-Jamel James - https://github.com/jrj-sys
+[Jamel James](https://github.com/jrj-sys)
 ## Made With:
 JavaScript, Node.js, ES6
-## Contact
+## Contribution 
+Issues can be created at any time [here](https://github.com/jrj-sys/README-Generator/issues).
+## Questions
 Please reach out to me via GitHub or Email for additional questions.
 
-- GitHub => https://github.com/jrj-sys  
-- Email => jamesjamel99@gmail.com
+- [GitHub](https://github.com/jrj-sys)
+- [Email](jamesjamel99@gmail.com)
 
 ## License
-Copyright (c) 2022 README Generator
+Copyright (c) 2022 README-Generator
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
