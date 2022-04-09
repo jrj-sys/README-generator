@@ -28,7 +28,7 @@ Issues can be created at any time [here](https://github.com/jrj-sys/README-Gener
 Please reach out to me via GitHub or Email for additional questions.
 
 - [GitHub](https://github.com/jrj-sys)
-- [Email](jamesjamel99@gmail.com)
+- Email: jamesjamel99@gmail.com
 
 ## License
 Copyright (c) 2022 README Generator
