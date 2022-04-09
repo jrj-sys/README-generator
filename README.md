@@ -12,8 +12,10 @@ A professional README generator that uses Node.js and its npm package, inquirer,
 5. [Credits](#Credits)
 ## Installation
 To install, clone the repository onto your machine. Make sure to `npm init` and `npm install inquirer` within your terminal to install required dependencies. 
+A video demonstrating installation can be found [here](https://www.youtube.com/watch?v=eZQTHqo_ylY).
 ## Usage
 To use the generator, run `node index.js` in your terminal at the root of directory of the file.
+A video demonstrating usage can be found [here](https://www.youtube.com/watch?v=eZQTHqo_ylY)
 ## Tests
 No tests were ran for this project. You can use a framework, such as jest, to test functions in this project. framework was used for testing.
 ## Credits
